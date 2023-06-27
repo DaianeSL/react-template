@@ -1,0 +1,7 @@
+@import './colors.css';
+
+html,
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}

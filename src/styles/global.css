@@ -1,7 +1,12 @@
 @import './colors.css';
+@import './reset.css';
 
 html,
 body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
+}
+
+html {
+  font-size: 18px;
 }

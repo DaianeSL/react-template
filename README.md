@@ -4,6 +4,12 @@ A custom react app without cra.
 
 ## Installation
 
+locked node version
+
+```bash
+nvm use
+```
+
 install packages
 
 ```bash

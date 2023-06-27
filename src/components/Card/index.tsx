@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './card.module.css'
 
-const Card: React.FC<{ cardText: string }> = ({ cardText }) => {
+import type { ICardProps } from './types'
+
+const Card: React.FC<ICardProps> = ({ cardText }) => {
   return (
     <div className={styles.Card}>
       <div>{cardText}</div>

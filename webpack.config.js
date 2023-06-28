@@ -44,13 +44,18 @@ module.exports = {
           },
           'postcss-loader'
         ]
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack']
       }
     ]
   },
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: './src/public', to: './' } // to the dist root directory
+        { from: './public', to: './' } // to the dist root directory
       ]
     }),
     new ESLintPlugin({
